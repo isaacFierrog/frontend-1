@@ -1,0 +1,107 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 45rem;
+    margin: 0 auto;
+    padding-top: 10rem;
+    font-size: 1.6rem;
+    color: rgb(253,253,251);
+    background-color: #3B4664;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.header__title{
+    align-self: flex-end;
+}
+.colors{
+    display: flex;
+    justify-content: space-between;
+    width: 13rem;
+}
+.colors__title{
+    align-self: end;
+}
+.select{
+    width: 45%;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .3rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(37,45,68);
+}
+.ball{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(219,59,39);
+}
+
+.display{
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: right;
+    background-color: rgb(24,31,50);
+    border: none;
+    border-radius: .5rem;
+}
+.display__text{
+    color: rgb(251,253,251);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.buttons{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 2rem;
+    background-color: rgb(37,45,65);
+    border: none;
+    border-radius: .5rem;
+}
+.buttons__button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: rgb(70,75,89);
+    background-color: rgb(234,227,219);
+}
+.buttons button[data-reset]{
+    grid-column: 1 / span 2;
+    color: rgb(210,217,225);
+    background-color: rgb(100,114,153);
+}
+.buttons button[data-del]{
+    color: rgb(210,217,225);
+    background-color: rgb(100,114,153);
+}
+.buttons button[data-equal]{
+    grid-column: 3 / span 2;
+    color: rgb(210,217,225);
+    background-color: rgb(209,63,48);
+}
